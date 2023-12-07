@@ -34,7 +34,7 @@ function Details() {
         <h3>More Details about Books</h3>
         <div className="heading">
           <h1>Details Books</h1>
-          <h3>-- Books -- </h3>
+          <h3>-- Books --- </h3>
         </div>
         <div className="flex justify-center items-center flex-wrap gap-11">
           <div className="card lg:card-side bg-white w-96 min-h-[100%] shadow-xl">
