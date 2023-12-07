@@ -26,10 +26,10 @@ function Home() {
           <div className="navbar" id="navLinks">
             <ul>
               <Link to="/Register">
-                <li>Register</li>
+                <li className="text-white">Register</li>
               </Link>
               <Link to="/Login/:id">
-                <li>Login</li>
+                <li className="text-white">Login</li>
               </Link>
             </ul>
           </div>

@@ -96,109 +96,110 @@ function Register() {
   };
 
   return (
-    <>
-      <div className="hero min-h-screen bg-white">
-        <div className="hero-content flex-col lg:flex-row-reverse min-h-screen">
-          <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-[#B99470]">Register</h1>
-            <p className="py-6 text-[#B99470]">
-              Hello Welcome to our Books Store!
-            </p>
-          </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-white max-lg:w-screen">
-            <form className="card-body min-h-screen bg-white">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Username</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="username"
-                  className="input input-bordered bg-white"
-                  value={register.username}
-                  onChange={(e) => {
-                    setRegister({
-                      ...register,
-                      username: e.target.value,
-                    });
-                  }}
-                  required
-                />
-                {errors.username && (
-                  <p className="text-red-500">{errors.username}</p>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="email"
-                  className="input input-bordered bg-white"
-                  value={register.email}
-                  onChange={(e) => {
-                    setRegister({
-                      ...register,
-                      email: e.target.value,
-                    });
-                  }}
-                  required
-                />
-                {errors.email && <p className="text-red-500">{errors.email}</p>}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="password"
-                  className="input input-bordered bg-white"
-                  value={register.password}
-                  onChange={(e) => {
-                    setRegister({
-                      ...register,
-                      password: e.target.value,
-                    });
-                  }}
-                  required
-                />
-                {errors.password && (
-                  <p className="text-red-500">{errors.password}</p>
-                )}
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Confirm Password</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="confirm password"
-                  className="input input-bordered bg-white"
-                  value={register.confirmPassword}
-                  onChange={(e) => {
-                    setRegister({
-                      ...register,
-                      confirmPassword: e.target.value,
-                    });
-                  }}
-                  required
-                />
-                {errors.confirmPassword && (
-                  <p className="text-red-500">{errors.confirmPassword}</p>
-                )}
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn btn-primary" onClick={handleRegister}>
-                  Register
-                </button>
-              </div>
-            </form>
-          </div>
+    <div className="hero min-h-screen bg-white">
+      <div className="hero-content flex-col lg:flex-row-reverse min-h-screen">
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-bold text-yellow-700">Register</h1>
+          <p className="py-6 text-yellow-700">
+            Hello Welcome to our Books Store!
+          </p>
+        </div>
+        <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-white min-h-screen max-lg:w-screen">
+          <form className="card-body ">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Username</span>
+              </label>
+              <input
+                type="text"
+                placeholder="username"
+                className="input input-bordered bg-white"
+                value={register.username}
+                onChange={(e) => {
+                  setRegister({
+                    ...register,
+                    username: e.target.value,
+                  });
+                }}
+                required
+              />
+              {errors.username && (
+                <p className="text-red-500">{errors.username}</p>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="email"
+                className="input input-bordered bg-white"
+                value={register.email}
+                onChange={(e) => {
+                  setRegister({
+                    ...register,
+                    email: e.target.value,
+                  });
+                }}
+                required
+              />
+              {errors.email && <p className="text-red-500">{errors.email}</p>}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Password</span>
+              </label>
+              <input
+                type="password"
+                placeholder="password"
+                className="input input-bordered bg-white"
+                value={register.password}
+                onChange={(e) => {
+                  setRegister({
+                    ...register,
+                    password: e.target.value,
+                  });
+                }}
+                required
+              />
+              {errors.password && (
+                <p className="text-red-500">{errors.password}</p>
+              )}
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Confirm Password</span>
+              </label>
+              <input
+                type="password"
+                placeholder="confirm password"
+                className="input input-bordered bg-white"
+                value={register.confirmPassword}
+                onChange={(e) => {
+                  setRegister({
+                    ...register,
+                    confirmPassword: e.target.value,
+                  });
+                }}
+                required
+              />
+              {errors.confirmPassword && (
+                <p className="text-red-500">{errors.confirmPassword}</p>
+              )}
+            </div>
+            <div className="form-control mt-6">
+              <button
+                className="btn  bg-[#770d15] text-white"
+                onClick={handleRegister}
+              >
+                Register
+              </button>
+            </div>
+          </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -76,13 +76,13 @@ function Login() {
       <div className="hero min-h-screen bg-white">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-[#B99470]">Login</h1>
-            <p className="py-6 text-[#B99470]">
+            <h1 className="text-5xl font-bold text-yellow-700">Login</h1>
+            <p className="py-6 text-yellow-700">
               Hello Welcome to our Books Store!
             </p>
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-white max-lg:w-screen">
-            <form className="card-body min-h-screen bg-white">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl min-h-96 bg-white max-lg:w-screen">
+            <form className="card-body  bg-white">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Username</span>
@@ -90,7 +90,7 @@ function Login() {
                 <input
                   type="text"
                   placeholder="username"
-                  className="input input-bordered"
+                  className="input input-bordered bg-white"
                   value={login.username}
                   onChange={(e) => {
                     setlogin({
@@ -111,7 +111,7 @@ function Login() {
                 <input
                   type="password"
                   placeholder="password"
-                  className="input input-bordered"
+                  className="input input-bordered bg-white"
                   value={login.password}
                   onChange={(e) => {
                     setlogin({
@@ -126,7 +126,10 @@ function Login() {
                 )}
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary" onClick={handlelogin}>
+                <button
+                  className="btn bg-[#770d15] text-white"
+                  onClick={handlelogin}
+                >
                   LogIn
                 </button>
               </div>

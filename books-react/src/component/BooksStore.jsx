@@ -55,12 +55,11 @@ function BooksStore() {
         <div className="flex justify-center items-center flex-wrap gap-11">
           {popular.map((book) => {
             return (
-              <div className="card w-64 bg-white shadow-xl">
+              <div className="card w-64 h-full bg-white shadow-xl">
                 <figure>
                   <img
                     src={book.book_image}
                     alt={book.title}
-                    width={200}
                     onClick={() => {
                       nav(`/Details/${book.rank}`);
                     }}
